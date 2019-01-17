@@ -1,6 +1,5 @@
 package StringVowelsTest;
 
-import LoginCode.EmptyCredentailsDetails;
 import StringVowels.EmptyStringException;
 import StringVowels.StringChecker;
 import org.junit.Assert;
