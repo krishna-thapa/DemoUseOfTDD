@@ -5,11 +5,11 @@ import java.util.Map;
 
 public class MovieServiceImpl implements MovieService{
 
-    public static Map<String, String> map = new HashMap<>();
+    //public static Map<String, String> map = new HashMap<>();
 
     @Override
     public String getParentalControlLevel(String titleId) throws TitleNotFoundException, TechnicalFailureException {
-
+        Map<String, String> map = new HashMap<>();
         /*switch(titleId){
             case "1": return "U";
             case "2": return "PG";

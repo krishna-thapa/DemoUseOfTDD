@@ -8,11 +8,18 @@ import java.util.List;
 
 public class ArrayMatrixSolver {
     public static void main(String[] args){
-        String fileName = "src\\main\\resources\\sample1.txt";
+        String fileName = "/Users/krishna/git/DemoUseOfTDD/src/main/resources/sample1.txt";
         String[][] getGrid = getGridData(fileName);
+        System.out.println("Maze output format before the solution is found.");
         showMatrixGrid(getGrid);
         String[][] solveMatrix = MazeSolution.solveMatrix(getGrid,  1,  1);
+        System.out.println("Maze output format once the solution is found.");
         showMatrixGrid(solveMatrix);
+        if(solveMatrix[1][1] != "S"){
+            System.out.println("Outcome: There is not any valid path available!!");
+        }else{
+            System.out.println("Outcome: There is valid path available.");
+        }
     }
 
     private static String[][] getGridData(String fileName){
