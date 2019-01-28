@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArrayMatrixSolver {
+
     public static void main(String[] args) {
         String fileName;
         String line;
@@ -68,7 +69,11 @@ public class ArrayMatrixSolver {
     }
 
 
-
+    /**
+     * Takes the input matrix and convert in Maze input/output formats before finding a solution
+     * @param rowListLines
+     * @return grid matrix in 2D array
+     */
     private static String[][] getGridData(List<String[]> rowListLines){
 
             String[][] matrix;
@@ -108,6 +113,10 @@ public class ArrayMatrixSolver {
         return matrix;
     }
 
+    /**
+     * Print the Matrix in grid format in console
+     * @param inputGrid
+     */
     private static void showMatrixGrid(String[][] inputGrid){
         final int rows = inputGrid.length;
         final int columns = inputGrid[0].length;

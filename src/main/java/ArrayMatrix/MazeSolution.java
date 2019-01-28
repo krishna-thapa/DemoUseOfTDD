@@ -2,8 +2,15 @@ package ArrayMatrix;
 
 public class MazeSolution {
 
-    public static boolean found = false;
+    static boolean found = false;  //to find out whether there is a solution in maze
 
+    /**
+     * Takes the inout format of the matrix
+     * @param grid
+     * @param startX
+     * @param startY
+     * @return outcome matrix grid if there is a solution
+     */
     static String[][] solveMatrix(String[][] grid, int startX, int startY){
 
         int x[] = {1, 0, 0, -1};
