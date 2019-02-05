@@ -16,8 +16,8 @@ public class SudokuSolution {
 
         System.out.println("Function which can print out a solved or unsolved Sudoku puzzle as text format");
         printSudoku(samplePuzzle);
-        int[] location = {1,7};
-        int number = 3;
+        int[] location = {7,8};
+        int number = 8;
         boolean output = solutionSudoku(samplePuzzle, location, number);
         System.out.println("false if there is already a conflicting number or else true if not: "+ output);
     }
@@ -38,9 +38,10 @@ public class SudokuSolution {
 
         // check if the number is in the row
         for (int i = 0; i < 9; i++) {
-            if (samplePuzzle2d[location[0]][i] == number)
+            if (samplePuzzle2d[location[0]][i] == number){
                 System.out.println("Same number conflict in row");
                 result = false;
+            }
         }
 
         // check if the number is in the column
@@ -62,6 +63,7 @@ public class SudokuSolution {
                 }
             }
         }
+        //System.out.println();
         return result;
     }
 
