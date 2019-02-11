@@ -1,7 +1,5 @@
 package StringVowels;
 
-import LoginCode.EmptyCredentailsDetails;
-
 public class StringChecker {
 
     public int countVowels(String input) throws EmptyStringException {

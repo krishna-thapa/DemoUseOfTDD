@@ -21,7 +21,7 @@ public class PrimeCheckerTest {
 
     @Test
     public void returnFalseWhenNumberIsNotPrime(){
-        Assert.assertFalse(primeChecker.checkPrime(0));
+        Assert.assertFalse(primeChecker.checkPrime(10));
     }
 
 }
